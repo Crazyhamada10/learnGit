@@ -10,9 +10,7 @@ int my_strlen(char *s)
    return (p - s);
 }
 
-int compare(char x, char y) {
-   return 0;
-}
+
 
 int main(void)
 {
