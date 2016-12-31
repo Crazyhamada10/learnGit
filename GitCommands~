@@ -17,11 +17,8 @@ git init //create repo called .git
 git --bare init //create repo inside the current folder which u must name with *.git
 
 echo 'TODO: Add contents for README' > README // Create README file and write data between '' to README File
-
 git add . // add new and modified files but not deleted
 git add A // add All
-git add fileName // add this file only
-
 git status -s // list files in the same folder with *.git folder
 
 git commit -m 'Intial Commit' //commit to local repo
