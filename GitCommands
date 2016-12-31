@@ -19,18 +19,21 @@ git --bare init //create repo inside the current folder which u must name with *
 echo 'TODO: Add contents for README' > README // Create README file and write data between '' to README File
 
 git add . // add new and modified files but not deleted
+git add -A // add new and modified files and deleted
 git add fileName // add this file only
 
-git status -s // list files in the same folder with *.git folder
+git status -s // shows unCommited files with ?? and commited files
 
 git commit -m 'Intial Commit' //commit to local repo
+git commit //opens gedit file to give commit name with multiple lines
+git show CommitIDHashed // example 498ad1dcd5603adf961a8f05aaf198dd493eabdb // this command shows the commit
+git diff // shows the diff from last commit
+
 
 //connect to online repo (push)
 git remote add origin gituser@git.server.com:project.git
-
-
-
-
+git push origin master
+git clone gituser@git.server.com:project.git //makes a copy from a git server repository
 
 
 
